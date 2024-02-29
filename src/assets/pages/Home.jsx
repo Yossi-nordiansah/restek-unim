@@ -20,7 +20,7 @@ const Home = () => {
               mahasiswa UNIM.
             </p>
           </div>
-          <div  className='mb-4'>
+          <div className='mb-4'>
             <h1 className='text-center font font-rubikmono_one'>Misi</h1>
             <ol className='px-3 text-center'>
               <li>1. Menampung mahasiswa UNIM untuk menyalurkan minat, bakat, dan
@@ -31,12 +31,27 @@ const Home = () => {
               </li>
             </ol>
           </div>
-        <div>
-          <h1 className='text-center font font-rubikmono_one'>Divisi</h1>
           <div>
-            
+            <h1 className='text-center font font-rubikmono_one'>Divisi</h1>
+            <div>
+              <div>
+                <h1>TEKTER</h1>
+                <p>Divisi Teknologi Terpadu merupakandivisi yang
+                  bertugas mengembangkan dan meneliti
+                  software komputer seperti operasi sistem
+                  aplikasi dan menciptakan project software
+                  demi kepentingan penelitian yang lebih efisien</p>
+              </div>
+              <div>
+                <h1>TEKTER</h1>
+                <p>Divisi Teknologi Terpadu merupakandivisi yang
+                  bertugas mengembangkan dan meneliti
+                  software komputer seperti operasi sistem
+                  aplikasi dan menciptakan project software
+                  demi kepentingan penelitian yang lebih efisien</p>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
