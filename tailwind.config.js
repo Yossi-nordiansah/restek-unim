@@ -21,8 +21,8 @@ export default {
         poppins_extrabold:['poppins-extrabold'],
         montserrat_semibold: ['montserrat-semibold'],
         montserrat_bold: ['montserrat-bold'],
-        pollerone:['pollerone'],
-        rubikmono_one:['rubikmono']
+        pollerone:['Poller One'],
+        rubikmono_one:['Rubik Mono One']
       }
     },
   },
