@@ -9,8 +9,6 @@ import Login from './assets/pages/Login.jsx';
 
 function App() {
 
-  console.log(window.scrollY)
-
   return (
     <>
       <BrowserRouter>
