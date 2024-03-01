@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'pollerone';
+  src: url('./assets/fonts/PollerOne.ttf') format('truetype'),
+}
