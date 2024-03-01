@@ -12,18 +12,18 @@ export default {
     'xl' : '1280px',
   },
     extend: {
-      fontFamily:{
-        poppins: ['poppins-regular'],
-        poppins_medium: ['poppins-medium'],
-        poppins_thin:['poppins-thin'],
-        poppins_semibold:['poppins-semibold'],
-        poppins_bold: ['poppins-bold'],
-        poppins_extrabold:['poppins-extrabold'],
-        montserrat_semibold: ['montserrat-semibold'],
-        montserrat_bold: ['montserrat-bold'],
-        pollerone:['pollerone'],
-        rubikmono_one:['rubikmono']
-      }
+      // fontFamily:{
+      //   poppins: ['poppins-regular'],
+      //   poppins_medium: ['poppins-medium'],
+      //   poppins_thin:['poppins-thin'],
+      //   poppins_semibold:['poppins-semibold'],
+      //   poppins_bold: ['poppins-bold'],
+      //   poppins_extrabold:['poppins-extrabold'],
+      //   montserrat_semibold: ['montserrat-semibold'],
+      //   montserrat_bold: ['montserrat-bold'],
+      //   pollerone:['pollerone'],
+      //   rubikmono_one:['rubikmono']
+      // }
     },
   },
   plugins: [],
