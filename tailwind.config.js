@@ -13,7 +13,8 @@ export default {
   },
     extend: {
       fontFamily:{
-        pollerone : ['pollerone']
+        pollerone : ['pollerone'],
+        poppinsextrabold : ['poppinsextrabold'],
       }
     },
   },

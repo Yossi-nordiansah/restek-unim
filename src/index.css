@@ -5,4 +5,13 @@
 @font-face {
   font-family: 'pollerone';
   src: url('./assets/fonts/PollerOne.ttf') format('truetype'),
+};
+@font-face {
+  font-family: 'poppinsextrabold';
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype'),
+};
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }

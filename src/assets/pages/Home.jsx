@@ -8,7 +8,7 @@ const Home = () => {
         <div className='w-full h-full bg-black/50 flex items-center'>
           <div className='w-full'>
             <p className='text-white font-pollerone'>Wellcome To Our Website</p>
-            <h1 className='text-white text-2xl font-poppins_extrabold'>UKM RESTEK UNIM</h1>
+            <h1 className='text-white text-2xl poppins-extrabold'>UKM RESTEK UNIM</h1>
           </div>
         </div>
       </div>
