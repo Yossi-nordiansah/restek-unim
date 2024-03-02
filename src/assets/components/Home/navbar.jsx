@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../image/logo-restek.png';
 import user from '../../image/user-circle.svg';
 import burgerMenu from '../../image/burger-icons.svg'
@@ -17,7 +17,21 @@ const Navbar = () => {
         } else {
             setChangeColorNavbar(false)
         }
-    }
+    };
+
+    useEffect(()=>{
+        const handleClickOutside = (event) => {
+            if(menuRef.current && !menuRef.current.contains(event.target)){
+                setShowMenu(false)
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+    },[])
 
     window.addEventListener('scroll', changeBgNav);
 
@@ -44,8 +58,8 @@ const Navbar = () => {
                     </Link></li>
                 </ul>
             </div>
-            <div className='md:hidden h-6 w-6'>
-                <div ref={menuRef} onClick={handleHamburgerMenu}>
+            <div ref={menuRef} className='md:hidden h-6 w-6'>
+                <div onClick={handleHamburgerMenu}>
                     <img src={showMenu? closeMenu : burgerMenu} alt="" className='w-6 ' /> 
                 </div>
                 <div className={`bg-blue-950/90 mt-8 w-32 ${showMenu? '-translate-x-20' : 'translate-x-12'} duration-300 rounded-l-md`}>
