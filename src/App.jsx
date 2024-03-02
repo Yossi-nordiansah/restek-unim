@@ -6,7 +6,7 @@ import About from './assets/pages/About.jsx';
 import Partner from './assets/pages/Partner.jsx';
 import Gallery from './assets/pages/Gallery.jsx';
 import Login from './assets/pages/Login.jsx';
-import './App.css'
+import './App.css';
 
 function App() {
 
