@@ -47,12 +47,12 @@ const Navbar = () => {
             </div>
             <div className='md:flex hidden'>
                 <ul className={`flex gap-6 items-center text-white montserrat-semibold `}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/news">News</Link></li>
-                    <li><Link to="/partner">Partner</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/login" className='flex montserrat-bold gap-2 items-center'>
+                    <li><Link to={"/restek-unim/"}>Home</Link></li>
+                    <li><Link to={"/restek-unim/news"}>News</Link></li>
+                    <li><Link to={"/restek-unim/partner"}>Partner</Link></li>
+                    <li><Link to={"/restek-unim/gallery"}>Gallery</Link></li>
+                    <li><Link to={"/restek-unim/about"}>About</Link></li>
+                    <li><Link to={"/restek-unim/login"} className='flex montserrat-bold gap-2 items-center'>
                         <p>Log In</p>
                         <img src={user} alt="" className='w-9' />
                     </Link></li>
@@ -64,12 +64,12 @@ const Navbar = () => {
                 </div>
                 <div className={`bg-blue-950/90 mt-8 w-32 ${showMenu? '-translate-x-20' : 'translate-x-12'} duration-300 rounded-l-md`}>
                     <ul className='flex flex-col  text-white poppins-semibold'>
-                        <li className='border-b border-white py-4 pl-8'><Link to="/">Home</Link></li>
-                        <li className='border-y border-white py-4 pl-8'><Link to="/news">News</Link></li>
-                        <li className='border-y border-white py-4 pl-8'><Link to="/partner">Partner</Link></li>
-                        <li className='border-y border-white py-4 pl-8'><Link to="/gallery">Gallery</Link></li>
-                        <li className='border-y border-white py-4 pl-8'><Link to="/about">About</Link></li>
-                        <li className='border-t border-white py-4 pl-6'><Link to="/login" className='flex montserrat-bold gap-1 items-center'>
+                        <li className='border-b border-white py-4 pl-8'><Link to={"/restek-unim/"}>Home</Link></li>
+                        <li className='border-y border-white py-4 pl-8'><Link to={"/restek-unim/news"}>News</Link></li>
+                        <li className='border-y border-white py-4 pl-8'><Link to={"/restek-unim/partner"}>Partner</Link></li>
+                        <li className='border-y border-white py-4 pl-8'><Link to={"/restek-unim/gallery"}>Gallery</Link></li>
+                        <li className='border-y border-white py-4 pl-8'><Link to={"/restek-unim/about"}>About</Link></li>
+                        <li className='border-t border-white py-4 pl-6'><Link to={"/restek-unim/login"} className='flex montserrat-bold gap-1 items-center'>
                             <p>Log In</p>
                             <img src={user} alt="" className='w-5' />
                         </Link></li>
