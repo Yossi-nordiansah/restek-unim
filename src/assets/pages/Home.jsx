@@ -14,18 +14,20 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll:1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     pauseOnHover: false
   }
 
   return (
     <div className=''>
       <div className='h-screen relative'>
-        <div className='w-full absolute z-10'>
-          <p className='text-white font-pollerone drop-shadow-lg'>Wellcome To Our Website</p>
-          <h1 className='text-white text-2xl poppins-extrabold drop-shadow-lg'>UKM RESTEK UNIM</h1>
+        <div className='w-full absolute z-10 flex items-center h-screen'>
+          <div className='w-full'>
+          <p className='text-white font-pollerone drop-shadow-lg text-center xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-base text-sm shadow-2xl'>Wellcome To Our Website</p>
+          <h1 className='text-white xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl poppins-extrabold drop-shadow-lg text-center shadow-2xl'>UKM RESTEK UNIM</h1>
+          </div>
         </div>
         <Slider {...settings} className='overflow-x-hidden overflow-y-hidden h-full w-full'>
           <div>
@@ -96,28 +98,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
-      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-          </span>
-          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">About</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
 
     </div>
   )
