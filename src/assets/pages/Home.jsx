@@ -2,19 +2,53 @@ import React from 'react';
 import bgHero from '../image/bg-hero.jpg';
 import tekterImg from '../image/tekter.png';
 import desainImg from '../image/desain.jpg';
-
+import crs1 from '../image/crs1.jpg';
+import crs2 from '../image/crs2.jpg';
+import crs3 from '../image/crs3.jpg';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false
+  }
+
   return (
     <div className=''>
-      <div style={{ backgroundImage: `url(${bgHero})` }} className='h-screen bg-center bg-cover text-center'>
+      <div className='h-screen relative'>
+        <div className='w-full absolute z-10'>
+          <p className='text-white font-pollerone drop-shadow-lg'>Wellcome To Our Website</p>
+          <h1 className='text-white text-2xl poppins-extrabold drop-shadow-lg'>UKM RESTEK UNIM</h1>
+        </div>
+        <Slider {...settings} className='overflow-x-hidden overflow-y-hidden h-full w-full'>
+          <div>
+            <img src={crs3} alt="" className='brightness-[.4] h-screen object-cover w-full' />
+          </div>
+          <div>
+            <img src={crs2} alt="" className='brightness-[.4] h-screen object-cover w-full' />
+          </div>
+          <div>
+            <img src={crs1} alt="" className='brightness-[.4] h-screen object-cover w-full' />
+          </div>
+        </Slider>
+      </div>
+
+      {/* <div style={{ backgroundImage: `url(${crs3})` }} className='h-screen bg-center bg-cover text-center'>
         <div className='w-full h-full bg-black/60 flex items-center'>
           <div className='w-full'>
             <p className='text-white font-pollerone drop-shadow-lg'>Wellcome To Our Website</p>
             <h1 className='text-white text-2xl poppins-extrabold drop-shadow-lg'>UKM RESTEK UNIM</h1>
           </div>
         </div>
-      </div>
+      </div> */}
+
       <div>
         <div className='bg-gradient-to-b from-[#1C1235] to-[#101011] text-white py-5 w-full'>
           <div className='mb-4'>
@@ -62,8 +96,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
     </div>
   )
 }
 
-export default Home
+export default Home;
