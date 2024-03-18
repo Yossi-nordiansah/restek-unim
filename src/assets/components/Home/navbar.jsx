@@ -51,23 +51,23 @@ const Navbar = () => {
                         <Link to={"/restek-unim/"}>
                             Home
                         </Link>
-                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-100'></div>
+                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-300'></div>
                     </li>
                     <li className='px-3 py-5 group'>
                         <Link to={"/restek-unim/news"}>News</Link>
-                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-100'></div>
+                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-300'></div>
                     </li>
                     <li className='px-3 py-5 group'>
                         <Link to={"/restek-unim/partner"}>Partner</Link>
-                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-100'></div>
+                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-300'></div>
                     </li>
                     <li className='px-3 py-5 group'>
                         <Link to={"/restek-unim/gallery"}>Gallery</Link>
-                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-100'></div>
+                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-300'></div>
                     </li>
                     <li className='px-3 py-5 group'>
                         <Link to={"/restek-unim/about"}>About</Link>
-                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-100'></div>
+                        <div className='w-0 group-hover:w-full bg-blue-600 h-[1px] duration-300'></div>
                     </li>
                     <li className='px-3 py-5 '><Link to={"/restek-unim/login"} className='flex montserrat-bold gap-1 items-center'>
                         <p>Log In</p>
